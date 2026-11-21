@@ -1,0 +1,347 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nuestro Universo ❤️</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main class="universo">
+        <canvas id="galaxia"></canvas>
+        <div id="contenedor-stickers"></div>
+        <div id="contador-amor">
+    <p>JUNTOS DESDE HACE...</p>
+    <div id="tiempo-juntos">
+        <span>0 días</span>
+        <span>00 horas</span>
+        <span>00 minutos</span>
+        <span>00 segundos</span>
+    </div>
+</div>
+        <div id="menu-estrellas">
+    <button class="estrella-opcion" id="estrella-recuerdos">
+        <span>✦</span>
+        <small>Nuestros recuerdos</small>
+    </button>
+
+    <button class="estrella-opcion" id="estrella-cancion">
+        <span>✦</span>
+        <small>Nuestra canción</small>
+    </button>
+
+    <button class="estrella-opcion" id="estrella-dedicatorias">
+        <span>✦</span>
+        <small>Para ti</small>
+    </button>
+</div>
+    <!-- VENTANAS DE LAS ESTRELLAS -->
+
+
+
+<div id="ventana-recuerdos" class="ventana-universo">
+    <div class="contenido-ventana galeria-recuerdos">
+        <button class="cerrar-ventana">×</button>
+
+        <div class="frase-central">
+            Cada recuerdo contigo<br>
+             es un pedacito de <br>
+             mi felicidad ♡
+        </div>
+
+        <div class="espacio-recuerdos">
+
+            <img src="img/recuerdo1.jpeg" class="foto-flotante foto1" alt="Nuestro recuerdo 1">
+            <img src="img/recuerdo2.jpeg" class="foto-flotante foto2" alt="Nuestro recuerdo 2">
+            <img src="img/recuerdo3.jpeg" class="foto-flotante foto3" alt="Nuestro recuerdo 3">
+            <img src="img/recuerdo4.jpeg" class="foto-flotante foto4" alt="Nuestro recuerdo 4">
+            <img src="img/recuerdo5.jpeg" class="foto-flotante foto5" alt="Nuestro recuerdo 5">
+            <img src="img/recuerdo6.jpeg" class="foto-flotante foto6" alt="Nuestro recuerdo 6">
+            <img src="img/recuerdo7.jpeg" class="foto-flotante foto7" alt="Nuestro recuerdo 7">
+
+            <button class="video-recuerdo" id="abrir-video-recuerdo">
+                ▶ Nuestro video
+            </button>
+
+        </div>
+    </div>
+</div>
+
+<div id="visor-recuerdo" class="visor-recuerdo">
+    <button id="cerrar-visor-recuerdo">×</button>
+    <img id="imagen-ampliada" src="" alt="Fotografía ampliada">
+</div>
+
+<div id="visor-video-recuerdo" class="visor-recuerdo">
+    <button id="cerrar-video-recuerdo">×</button>
+    <video id="video-ampliado" controls playsinline>
+        <source src="videos/nuestro-video.mp4" type="video/mp4">
+    </video>
+</div>
+
+
+<div id="ventana-cancion" class="ventana-universo">
+    <div class="contenido-ventana reproductor-musica">
+        <button class="cerrar-ventana">x</button>
+
+        <h2>Nuestra Musica</h2>
+        <p>Hay canciones que cuentan nuestra historia.</p>
+
+        <h3>Las nuestras</h3>
+
+        <div class="tarjeta-cancion">
+            <h4>Nuestra cancion</h4>
+            <button class="reproducir-cancion" data-cancion="nuestra1">▶Reproducir</button>
+            <div class="barra-cancion">
+              <div class="progreso-cancion"></div>
+            
+            </div>
+            <small class="tiempo-cancion">0:00/1:56</small>
+        </div>
+
+        <div class="tarjeta-cancion">
+           <h4>Nuestra cancion 2</h4>
+           <button class="reproducir-cancion" data-cancion="nuestra2">▶Reproducir</button>
+            <div class="barra-cancion">
+                <div class="progreso-cancion"></div>
+            </div>
+            <small class="tiempo-cancion">0:00/0:58</small>
+        </div>
+
+        <h3>💗Las que mas me recuerda a ti</h3>
+
+        <div class="tarjeta-cancion">
+            <h4>La que mas me recuerda a ti </h4>
+            <button class="reproducir-cancion" data-cancion="recuerda1">▶Reproducir</button>
+            <div class="barra-cancion">
+            <div class="progreso-cancion"></div>
+            </div>
+            <small class="tiempo-cancion">0:00/1:03</small>
+        </div>
+
+<div class="tarjeta-cancion">
+    <h4>La que me recuerda a ti </h4>
+    <button class="reproducir-cancion" data-cancion="recuerda2">
+        ▶ Reproducir
+    </button>
+    <div class="barra-cancion">
+        <div class="progreso-cancion"></div>
+    </div>
+    <small class="tiempo-cancion">0:00 / 1:02</small>
+</div>
+
+    </div>
+    
+</div>
+
+
+<div id="ventana-dedicatorias" class="ventana-universo">
+    <div class="contenido-ventana libro-amor">
+
+        <button class="cerrar-ventana">×</button>
+
+        <div class="pagina-dedicatoria activa">
+
+            <span class="numero-pagina">01 / 03</span>
+
+            <h2>Tres palabras, una historia ♡</h2>
+
+            <h3>CASUALIDAD, FELICIDAD E INFINITO</h3>
+
+            <p>
+                Recuerdo aquel día en el que, por casualidad o por
+                destino, coincidimos en aquel viaje a la playa.
+                En ese entonces no sabía lo que el futuro nos tenía
+                preparado. A pesar de aquella distancia y del tiempo
+                que pasó sin volvernos a ver, algo causaste en mí.
+            </p>
+
+            <p>
+                Recuerdo aquel octubre, cuando me sacaste a bailar,
+                y aquel carnaval en el que me animé a invitarte a
+                bailar con aquella canción de La Nena. También
+                recuerdo el primer mensaje que te envié,
+                todo nervioso, jajaja.
+            </p>
+
+            <p>
+                A pesar de que llegué a pensar que no me correspondías,
+                resultó ser todo lo contrario. Todavía recuerdo
+                aquella noche en la que me lo confesaste y nos dimos
+                nuestro primer beso. Un beso que no he olvidado
+                ni olvidaré.
+            </p>
+
+            <p>
+                Tampoco olvidaré nuestros mensajes, las salidas,
+                los bailes, las notitas y, sobre todo,
+                aquellos ojitos que tanto me encantan.
+            </p>
+
+            <p>
+                Gracias, amor, por corresponderme, por permitirme
+                formar parte de tu vida y por hacer que cada uno
+                de estos momentos se convierta en un recuerdo
+                tan especial.
+            </p>
+
+            <p>
+                Sé que apenas es nuestro primer mes y que todavía
+                nos esperan muchísimos más, pero puedo decirte
+                que este ha sido uno de los meses más bonitos,
+                alegres e inolvidables que he vivido.
+            </p>
+
+            <h3>Gracias por este primer capítulo de nuestra historia.</h3>
+
+            <p>Te amoooo. ♡</p>
+
+        </div>
+
+     <div class="pagina-dedicatoria">
+    <span class="numero-pagina">02 / 03</span>
+    <h2>Una carta para ti 💌</h2>
+
+    <h3>Si pudieras verte desde mi corazón ♡</h3>
+
+    <p>
+        Quisiera que pudieras verte desde mi corazón.
+    </p>
+
+    <p>
+        Tal vez así entenderías por qué me quedo mirándote,
+        por qué sonrío cuando pienso en ti y por qué,
+        incluso en los días más normales, encuentro motivos
+        para sentirme afortunado de tenerte.
+    </p>
+
+    <p>
+        Verías que no necesito que seas distinta, que no espero
+        que tengas siempre una sonrisa ni que escondas tus
+        imperfecciones. A mí me enamora la mujer que eres,
+        con todo lo que te hace única.
+    </p>
+
+    <p>
+        Y ojalá nunca te falten motivos para sentirte bonita,
+        querida y suficiente.
+    </p>
+
+    <p>
+        Porque si hay algo que quisiera regalarte, además
+        de mi amor, es la seguridad de que no tienes que ser
+        otra persona para merecerlo.
+    </p>
+
+    <p>
+        Si pudieras mirar dentro de mí, entenderías que mis
+        ojos no exageran cuando te dicen que eres preciosa.
+    </p>
+
+    <p>Con todo mi amor. ♡</p>
+</div>
+
+        <div class="pagina-dedicatoria poema-amor">
+    <span class="numero-pagina">03 / 03</span>
+    <h2>Versos para ti 🌹</h2>
+
+    <h3>Mi universo eres tú ♡</h3>
+
+    <p>
+        Tus ojos son el cielo<br>
+        donde quiero amanecer,<br>
+        la calma más bonita<br>
+        que he podido conocer.
+    </p>
+
+    <p>
+        Tu sonrisa tiene magia,<br>
+        tiene luz y tiene paz,<br>
+        como un regalo eterno<br>
+        que mi vida necesitaba.
+    </p>
+
+    <p>
+        Siempre eres perfecta en mis días,<br>
+        en mis noches y en mi fe,<br>
+        como si Dios con sus manos<br>
+        te hubiera hecho para mí.
+    </p>
+
+    <p>
+        No hay estrella que se acerque<br>
+        a tu manera de brillar,<br>
+        porque hasta el universo<br>
+        te quisiera contemplar.
+    </p>
+
+    <p>
+        Si tu voz tuviera forma,<br>
+        tendría tu corazón,<br>
+        y si algún día preguntan<br>
+        qué milagro pude ver,<br>
+        diré que fue conocerte<br>
+        y que te pude querer.
+    </p>
+
+    <p>
+        Porque entre tantas almas,<br>
+        entre tanto caminar,<br>
+        Dios puso tu vida en la mía<br>
+        y ahí aprendí a amar.
+    </p>
+
+    <h3>Te amo. ♡</h3>
+</div>
+
+        <div class="navegacion-paginas">
+
+            <button id="pagina-anterior" disabled>
+                ❮ Anterior
+            </button>
+
+            <span id="indicador-pagina">1 / 3</span>
+
+            <button id="pagina-siguiente">
+                Siguiente ❯
+            </button>
+
+        </div>
+
+    </div>
+</div>
+        <section class="contenido">
+            <p class="subtitulo">UN PEQUEÑO UNIVERSO PARA TI</p>
+            <h1>Nuestro Universo</h1>
+            <p class="mensaje">
+                Llegaste a mi universo y creaste
+                un lugar que antes no existía.
+            </p>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+<div id="pantalla-bienvenida">
+    <div class="bienvenida-contenido">
+        <h1>Nuestro Universo</h1>
+        <p>Un pequeño universo creado para ti...</p>
+
+       <button id="entrar-universo" type="button"
+    onclick="
+        document.getElementById('pantalla-bienvenida').classList.add('salir');
+        setTimeout(() => {
+            document.getElementById('pantalla-bienvenida').remove();
+        }, 1300);
+    ">
+    ♡
+</button>
+        <p class="texto-corazon">Presiona aquí, amor</p>
+    </div>
+</div>
+
+</html>
